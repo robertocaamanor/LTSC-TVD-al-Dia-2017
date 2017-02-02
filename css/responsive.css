@@ -1,0 +1,80 @@
+@media screen and (max-width: 1024px) {
+	footer .widget {
+		width: 50%;
+	}
+
+	.widget ul li {
+		border-bottom: 1px solid #610000;
+		padding: 5px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	header .logo {
+		width: 50%;
+	}
+
+	header .logo img {
+		width: 100%;
+	}
+
+	.menu a {
+		color: #FFFFFF;
+	}
+
+	.menu ul {
+		display: block;
+		text-align: left;
+	}
+
+	.menu ul.nav li {
+		display: block;
+	}
+
+	.menu ul li:hover ul {
+		display: none;
+		position: static;
+	}
+
+	.menu a span {
+		position: absolute;
+		right: 5px;
+	}
+
+	.articles-list {
+		width: 100%;
+	}
+
+	.articles-single {
+		width: 100%;
+	}
+
+	.main aside {
+		width: 100%;
+		clear: both;
+	}
+
+	footer .widget {
+		margin-bottom: 40px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px){	
+	header .logo {
+		width: 40%;
+	}
+
+	header .logo img {
+		width: 100%;
+	}
+
+	.articles-list article .imagen {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.articles-list article hgroup {
+		width: 100%;
+	}
+}

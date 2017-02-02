@@ -1,0 +1,527 @@
+/*
+	Theme Name: LTSCTVD 1.0
+	Theme URI: tvdaldia.lateleseguncaamano.com
+	Descripcion: Primera version de la pagina oficial de LTSC
+	Version: 1
+	Author: Roberto Caamaño
+	Author URL: www.lateleseguncaamano.com
+*/
+
+/* Estilos generales */
+
+li, ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #2E2E2E;
+	font-family: 'Roboto Slab', Arial, Sans-serif;
+}
+
+a {
+	color: #D27C00;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #753F00;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+h1, h2, h3 {
+   font-family: 'Montserrat', Arial, Sans-serif;
+   font-weight: 700;	
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.alignright {float:right; margin:0 0 1em 1em}
+.alignleft {float:left; margin:0 1em 1em 0}
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a .alignright {float:right; margin:0 0 1em 1em}
+a .alignleft {float:left; margin:0 1em 1em 0}
+a .aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Header */
+
+header label {
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+header .logo {
+	float: left;
+	width: 25%;
+	padding: 8px;
+}
+
+header .logo img {
+	height: 100%;	
+}
+
+header #btn-menu {
+	display: none;
+}
+/* Navbar 1 */
+
+#navbar1 {
+	float: right;
+	width: 75%;
+}
+
+#navbar1 a {
+	font-family: 'Montserrat', Arial, Sans-serif;
+	color: #464646;
+	text-transform: uppercase;
+}
+
+#navbar1 ul {
+	padding-top: 30px;
+}
+
+#navbar1 li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+	z-index:9999;
+}
+
+
+/* Navbar 2 */
+
+#navbar2 {
+	background-color: #FF9000;
+	font-family: 'Montserrat', Arial, Sans-serif;
+	text-transform: uppercase;
+	padding: 5px 5px;
+}
+
+#navbar2 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#navbar2 a:hover {
+	color: #FFD562;
+	background-color: #FF9000;
+}
+
+#navbar2 li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+/* Lista de articulos */
+
+.main {
+	padding-bottom: 10px;
+}
+
+.articles-list {
+	width: 75%;
+	float: left;
+	padding-top: 15px;
+} 
+
+.articles-list article {
+	padding-bottom: 15px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #B2B2B2;
+	width: 98%;
+}
+
+.articles-list a {
+	color: #FF9000;
+}
+
+.articles-list a:hover {
+	color: #B46000;
+}
+
+.articles-list .imagen {
+	width: 30%;
+	height: 30%;
+	float: left;
+}
+
+.articles-list .imagen img {
+	width: 100%;
+	height: 100%;
+}
+
+.articles-list hgroup {
+	width: 70%;
+	float: right;
+	padding-left: 10px;
+	margin-top: -18px;
+}
+
+.articles-list .date {
+	font-family: 'Montserrat', Arial, Sans-serif;
+	display: block;
+}
+
+.articles-list .categories {
+	font-family: 'Montserrat', Arial, Sans-serif;
+	display: block;
+}
+
+.articles-list .categories ul {
+	list-style: none;
+	display: inline-block;
+}
+
+.articles-list .categories li {
+	display: inline-block;
+}
+
+/* Articulos individuales */
+
+.articles-single {
+	width: 75%;
+	float: left;
+	padding-top: 15px;
+} 
+
+.articles-single article {
+	padding-bottom: 15px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #B2B2B2;
+	width: 98%;
+}
+
+.articles-single h1 {
+	color: #FF9000;
+	border-bottom: 1px dotted #B2B2B2;
+	padding-bottom: 10px;
+}
+
+.articles-single a:hover {
+	color: #B46000;
+}
+
+.articles-single .imagen {
+	width: 100%;
+	float: left;
+	padding-top: 5px;
+}
+
+.articles-single .datos {
+	width: 100%;
+	float: right;
+	margin-top: -18px;
+}
+
+.articles-single .creditos {
+	font-family: 'Montserrat', Arial, Sans-serif;
+	margin-top: -10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.articles-single .creditos .date {
+	display: inline;
+	border-right: 1px dotted #B2B2B2;
+	padding-right: 5px;
+}
+
+.articles-single .creditos .categories {
+	display: inline;
+	margin-left: 7px;
+	border-right: 1px dotted #B2B2B2;
+	padding-right: 5px;
+}
+
+.articles-single .creditos .categories ul {
+	list-style: none;
+	display: inline-block;
+}
+
+.articles-single .creditos .categories li {
+	display: inline-block;
+}
+
+.articles-single .creditos .user {
+	display: inline-block;
+	margin-left: 7px;
+}
+
+.articles-single .extracto {
+	font-size: 1.2em;
+}
+
+.articles-single .extracto blockquote {
+	font-size: 0.9em;
+	color: #636363;
+	border-left: 3px solid #FF9000;
+	background-color: #EEEEEE;
+	font-weight: 300;
+}
+
+/* Sidebar */
+
+aside {
+	width: 25%;
+	float: right;
+	padding-top: 10px;
+}
+
+aside .widget h3 {
+	font-size: 1.4em;
+}
+
+.widget ul li {
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.widget a {
+	font-family: 'Montserrat', Arial, Sans-serif;
+}
+
+/* Footer */
+
+footer {
+	background-color: #FF9000;
+	padding-bottom: 10px;
+}
+
+footer .widget {
+	margin-right: 10px;
+}
+
+footer .widget h3 {
+	color: #FFFFFF;
+}
+
+footer .widget a {
+	color: #FFEF86;
+}
+
+footer .widget a:hover {
+	color: #412200;
+}
+
+.copyright {
+	background-color: #B56600;
+	color: #FFFFFF;
+	padding: 8px;
+}
+
+.copyright #creditos {
+	width: 80%;
+	float: left;
+}
+
+.copyright #arriba {
+	width: 20%;
+	float: right;
+	display: inline-block;
+	text-align: right;
+}
+
+.copyright #arriba a {
+	color: #FFE992;
+}
+
+/* Tags */
+
+.articles-single article .tags {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-family: 'Montserrat', Arial, Sans-serif;
+}
+
+.articles-single article .tags ul {
+	display: inline-block;
+}
+
+.articles-single article .tags li {
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+.articles-single article .tags a {
+	padding: 5px;
+	margin-right: 4px;
+	margin-top: 10px;
+	background-color: #C4C4C4;
+	text-transform: uppercase;
+	color: #6E6E6E;
+}
+
+.articles-single article .tags a:hover {
+	background-color: #FF9000;
+	color: #FFFFFF;
+}
+
+/* Barra de busqueda */
+
+.searchform {
+	max-width: 100%;
+	font-family: 'Montserrat', Arial, Sans-serif;
+}
+
+.searchform label {
+	display: none;
+}
+
+.searchform #s {
+	padding: 7px;
+	border-radius: 5px;
+	border-style: none;
+	color: #FF9000;
+	background-color: #E0E0E0;
+}
+
+.searchform #searchsubmit {
+	padding: 7px;
+	background-color: #FF9000;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border-style: none;
+}
+
+.searchform #searchsubmit:hover {
+	background-color: #5B5B5B;
+	border: 1px solid #5B5B5B;
+}
+
+/* Comentarios */
+
+#comentarios {
+	width: 98%;
+	border-bottom: 1px dotted #B2B2B2;
+}
+
+#comentarios #respond {
+	width: 100%;
+}
+
+#comentarios input[type="text"] {
+	padding: 7px;
+	border-radius: 5px;
+	border-style: none;
+	color: #5C5C5C;
+	background-color: #E0E0E0;
+	margin-bottom: 8px;
+}
+
+#comentarios #comment {
+	padding: 7px;
+	border-radius: 5px;
+	border-style: none;
+	color: #5C5C5C;
+	background-color: #E0E0E0;
+}
+
+#comentarios #submit {
+	padding: 7px;
+	background-color: #FF9000;
+	color: #FFFFFF;
+	border-radius: 5px;
+	border-style: none;
+}
+
+#comentarios .commentlist li {
+	background-color: #E6E6E6;
+	padding: 10px;
+	list-style: none;
+}
+
+#comentarios .commentlist .comment-author {
+	font-size: 1.6em;
+	font-family: 'Montserrat', Arial, Sans-serif;
+}
+
+#comentarios .commentlist .comment-meta {
+	font-size: .9em;
+}
+
+/* Paginacion */
+
+.paginacion {
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.paginacion li {
+	list-style: none;
+	display: inline;
+	font-family: 'Montserrat', Arial, Sans-serif;
+}
+
+.paginacion li a{
+	background-color: #FF9000;
+	padding: 7px;
+	color: #FFFFFF;
+}
+
+.paginacion .current {
+	background-color: #C4C4C4;
+	padding: 7px;
+	color: #6E6E6E;
+}
